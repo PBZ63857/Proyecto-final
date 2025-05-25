@@ -1,56 +1,54 @@
 # Safe Play: Historia y Seguridad en los Videojuegos
 
-Una página web informativa que combina una línea del tiempo de hitos importantes en la industria de los videojuegos con una exploración educativa de la ciberseguridad y sus principales amenazas.
+Una página web informativa que combina una línea del tiempo con hitos importantes de la industria de los videojuegos y un enfoque educativo sobre la ciberseguridad y las amenazas más relevantes que afectan a esta industria.
 
 ## 📚 Descripción
 
-Este proyecto tiene como objetivo educar al usuario sobre la evolución de los videojuegos, abordando además las amenazas digitales más comunes que afectan a esta industria. Está dividido en secciones bien diferenciadas, interactivas y organizadas para facilitar la navegación.
+Este proyecto tiene como objetivo concienciar al usuario sobre la evolución de los videojuegos y los riesgos digitales que existen actualmente. Está dividido en secciones diferenciadas para facilitar la navegación y comprensión: historia, ciberseguridad y vulnerabilidades.
 
 ## 🛠️ Tecnologías utilizadas
 
-- **HTML5**: estructura semántica de todo el contenido.
-- **CSS**: diseño responsive, estilos visuales y animaciones básicas.
-- **JavaScript**: interactividad como desplegables, quiz y efectos dinámicos.
+- HTML5: Estructura semántica del contenido.
+- CSS: Diseño responsive y estilos visuales.
+- JavaScript: Interactividad para desplegar contenido y gestionar el quiz.
 
 ## 🗂️ Estructura del sitio
 
-- `index.html`: Página de inicio con presentación general.
-- `historia.html`: Línea del tiempo interactiva con eventos clave desde 1958 hasta la actualidad. Cada evento se despliega al hacer clic.
-- `ciberseguridad.html`: Introducción teórica a conceptos de ciberseguridad aplicados al mundo del videojuego (IA, VR, prevención).
-- `Vulnerabilidades.html`: Sección sobre tipos de ataques, ejemplos reales y un quiz interactivo final.
+- index.html: Página de inicio con presentación del proyecto.
+- historia.html: Línea del tiempo interactiva con eventos clave desde 1958 hasta 2025.
+- ciberseguridad.html: Explicación de amenazas emergentes, buenas prácticas para desarrolladores y jugadores.
+- Vulnerabilidades.html: Descripción de vulnerabilidades típicas, ataques reales y un quiz interactivo.
 
-## ⚙️ Funcionalidades desarrolladas
+## ⚙️ Funcionalidades destacadas
 
-### 🧾 Línea del tiempo (`historia.html`)
-- Cada evento está implementado como un bloque `.timeline-event` con un encabezado `<h3>` y contenido oculto `.detalle`.
-- El evento se despliega al hacer clic gracias a la función `toggleDetalle()` en JavaScript.
+### 📅 Línea del tiempo (historia.html)
+- Eventos desde 1958 hasta 2025.
+- Cada evento muestra información adicional y una imagen al hacer clic.
+- Interactividad manejada con la función `toggleDetalle()`.
 
-### 🔐 Sección de ciberseguridad (`ciberseguridad.html`)
-- Contenido dividido en subtemas con títulos dinámicos usando `toggleTitulo()`.
-- Añadidas imágenes ilustrativas y referencias a tecnologías modernas como IA y realidad virtual.
+### 🔐 Ciberseguridad (ciberseguridad.html)
+- Información actualizada sobre amenazas modernas: IA, cloud gaming, IoT, etc.
+- Consejos de buenas prácticas para usuarios y desarrolladores.
+- Contenido estructurado con listas y subtítulos para facilitar su lectura.
 
-### 🧨 Sección de vulnerabilidades (`Vulnerabilidades.html`)
-- Enumeración de vulnerabilidades frecuentes y ataques históricos reales.
-- Diseño en bloques `evento` con texto oculto desplegable.
-- **Quiz interactivo con 6 preguntas**:
-  - Muestra una pregunta a la vez.
-  - Colorea la respuesta correcta/incorrecta.
-  - Muestra la puntuación total al finalizar.
-  - Todo gestionado con una única función `verificar()`.
+### 🧨 Vulnerabilidades (Vulnerabilidades.html)
+- Tipos de vulnerabilidades más comunes en videojuegos.
+- Ejemplos reales de ataques a empresas como Sony, Nintendo o Steam.
+- Mini quiz interactivo de 6 preguntas con sistema de puntuación.
 
 ## ✨ Detalles técnicos
 
-- Toda la lógica está escrita en JavaScript, sin librerías externas.
-- Se implementaron funciones reutilizables (`toggleDetalle`, `toggleTitulo`, `verificar`).
-
+- Toda la lógica está escrita en JavaScript.
+- Archivos JavaScript y CSS enlazados de forma externa.
+- Código limpio y organizado, enfocado en la comprensión del contenido.
 
 ## 📁 Archivos clave
 
-- `estilos.css`: estilos generales, tarjetas de quiz, botones interactivos.
-- `script.js`: contiene las funciones de interactividad (quiz, toggle de texto, etc.).
-- `README.md`: este archivo.
+- estilos.css: Estilos visuales de toda la web.
+- script.js: Funciones de interactividad (quiz, toggles).
+- README.md: Este archivo.
 
 ## 👩‍💻 Autora
 
-Clara Fernández Castro* 
-Proyecto Intermodular — 1º DAW virtual
+Clara Fernández Castro  
+Proyecto Intermodular — 1º DAW Virtual
