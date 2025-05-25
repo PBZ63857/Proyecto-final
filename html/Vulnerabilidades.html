@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <title>Safe Play - Seguridad</title>
+    <link href="css/estilos.css" rel="stylesheet" />
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1><span class="titulo">Safe Play</span> 🎮🛡️</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="ciberseguridad.html">Ciberseguridad</a></li>
+                <li><a href="Vulnerabilidades.html">Vulnerabilidades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Vulnerabilidades y Ataques Relevantes</h2>
+
+            <h3>Tipos de vulnerabilidades más comunes en videojuegos</h3>
+
+            <div class="evento">
+                <h4 onclick="toggleTitulo(this)">Inyección de código</h4>
+                <p class="detalle">Los atacantes insertan comandos o scripts maliciosos en formularios, chats o nombres de usuario para ejecutar código dentro del juego.</p>
+            </div>
+
+            <div class="evento">
+                <h4 onclick="toggleTitulo(this)">Fugas de datos</h4>
+                <p class="detalle">Suceden cuando la información personal o financiera del usuario se almacena sin cifrado o sin restricciones de acceso adecuadas.</p>
+            </div>
+
+            <div class="evento">
+                <h4 onclick="toggleTitulo(this)">Fallos en la autenticación</h4>
+                <p class="detalle">Permiten a los atacantes acceder a cuentas sin tener la contraseña correcta, a menudo debido a validaciones débiles.</p>
+            </div>
+
+            <div class="evento">
+                <h4 onclick="toggleTitulo(this)">APIs mal protegidas</h4>
+                <p class="detalle">Si una API no está autenticada correctamente o carece de límites, los atacantes pueden extraer o modificar datos del juego.</p>
+            </div>
+
+            <div class="evento">
+                <h4 onclick="toggleTitulo(this)">Uso de bibliotecas inseguras</h4>
+                <p class="detalle">Las dependencias de terceros pueden tener vulnerabilidades si no se mantienen actualizadas.</p>
+            </div>
+
+            <h3>Ataques más importantes dentro de la industria</h3>
+
+            <div class="evento">
+                <h4 onclick="toggleTitulo(this)">2011 - Hackeo de PlayStation Network</h4>
+                <p class="detalle">Sony sufrió una intrusión que expuso los datos de más de 77 millones de cuentas de PSN. A raíz de este suceso el servicio estuvo caído 23 días.</p>
+            </div>
+
+            <div class="evento">
+                <h4 onclick="toggleTitulo(this)">2019 - Filtración de datos en la E3</h4>
+                <p class="detalle">Más de 2.000 registros personales de periodistas y creadores quedaron expuestos. La ESA pidió disculpas y reforzó su seguridad.</p>
+            </div>
+
+            <div class="evento">
+                <h4 onclick="toggleTitulo(this)">2020 - Filtración masiva de Nintendo</h4>
+                <p class="detalle">Se filtraron más de 2 TB de datos internos, incluyendo código fuente de consolas y herramientas de desarrollo.</p>
+            </div>
+
+            <div class="evento">
+                <h4 onclick="toggleTitulo(this)">2024 - Ataque DDoS a Steam</h4>
+                <p class="detalle">Steam fue atacado en más de 100 servidores. Sin embargo, gracias a su compleja infraestructura, el impacto fue casi invisible para los usuarios.</p>
+            </div>
+
+            <h3>Mini Quiz: ¿Qué has aprendido?</h3>
+
+            <div id="quiz-container">
+                <div class="pregunta" data-respuesta="0" style="display: block;">
+                    <p>1.¿Cuál de las siguientes es una amenaza común en videojuegos?</p>
+                    <button class="quiz-btn" onclick="verificar(this, 0)">Phishing</button>
+                    <button class="quiz-btn" onclick="verificar(this, 1)">Firewall</button>
+                </div>
+
+                <div class="pregunta" data-respuesta="0">
+                    <p>2.¿Qué debes evitar para proteger tus credenciales?</p>
+                    <button class="quiz-btn" onclick="verificar(this, 0)">Compartir tu contraseña</button>
+                    <button class="quiz-btn" onclick="verificar(this, 1)">Activar 2FA</button>
+                </div>
+
+                <div class="pregunta" data-respuesta="1">
+                    <p>3.¿Qué técnica se usa para saturar servidores?</p>
+                    <button class="quiz-btn" onclick="verificar(this, 0)">Spoofing</button>
+                    <button class="quiz-btn" onclick="verificar(this, 1)">DDoS</button>
+                </div>
+                <div class="pregunta" data-respuesta="1">
+                    <p>4.¿Qué sistema permite identificar a los jugadores de forma más segura?</p>
+                    <button class="quiz-btn" onclick="verificar(this, 0)">Nombre de usuario visible</button>
+                    <button class="quiz-btn" onclick="verificar(this, 1)">Autenticación en dos pasos (2FA)</button>
+                </div>
+                <div class="pregunta" data-respuesta="1">
+                    <p>5.¿Qué tipo de ataque expone datos sin necesidad de contraseñas?</p>
+                    <button class="quiz-btn" onclick="verificar(this, 0)">Fuga de datos</button>
+                    <button class="quiz-btn" onclick="verificar(this, 1)">Ataque DDoS</button>
+                </div>
+                <div class="pregunta" data-respuesta="1">
+                    <p>6.¿Qué medida ayuda a prevenir trampas y modificaciones del juego?</p>
+                    <button class="quiz-btn" onclick="verificar(this, 0)">Jugar en modo desconectado</button>
+                    <button class="quiz-btn" onclick="verificar(this, 1)">Sistema anti-cheat</button>
+                </div>
+            </div>
+
+            <p id="resultado-quiz"></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Safe Play</p>
+    </footer>
+</body>
+</html>

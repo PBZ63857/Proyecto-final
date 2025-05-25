@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Safe Play - Ciberseguridad</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="index">
+    <header>
+        <h1><span class="titulo">Safe Play</span> 🔐</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="ciberseguridad.html">Ciberseguridad</a></li>
+                <li><a href="Vulnerabilidades.html">Vulnerabilidades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenido">
+        <h2>Ciberseguridad en los Videojuegos</h2>
+        <p>La ciberseguridad en el ámbito de los videojuegos se refiere a la protección de los sistemas, redes, y datos relacionados con los videojuegos frente a accesos no autorizados, ataques y vulnerabilidades.</p>
+        <p>Los videojuegos en línea manejan millones de cuentas de usuarios, datos personales y métodos de pago, por lo que representan un objetivo atractivo para los ciberdelincuentes. Entre las principales amenazas se encuentran el robo de credenciales, ataques DDoS, malware en juegos pirateados y estafas mediante phishing.</p>
+        <p>Es fundamental que tanto las empresas como los jugadores adopten buenas prácticas de seguridad: autenticación en dos pasos, contraseñas seguras, software original y actualización constante de los sistemas.</p>
+
+        <h3>Amenazas emergentes</h3>
+        <p>El mundo de los videojuegos evoluciona rápidamente con tecnologías como la computación en la nube, la inteligencia artificial, la realidad virtual y los dispositivos conectados (IoT). Este avance también amplía la superficie de ataque para los ciberdelincuentes.</p>
+
+        <p>Una de las amenazas más notables es el <strong>secuestro de cuentas mediante ataques dirigidos</strong>, como spear phishing o ingeniería social, especialmente en plataformas con economía digital como Steam, Xbox Live o Epic Games. Estas cuentas suelen contener datos personales, métodos de pago y objetos virtuales de alto valor.</p>
+
+        <p>En los servicios de <strong>cloud gaming</strong> (juego en la nube), se vuelve crucial proteger las conexiones en tiempo real. Un atacante podría interceptar sesiones activas o utilizar técnicas como el <em>man-in-the-middle</em> para manipular partidas o robar credenciales.</p>
+
+        <p>Los <strong>cheats con IA</strong> son otra amenaza emergente. Algunos desarrolladores de trampas están empezando a utilizar redes neuronales para predecir movimientos y automatizar acciones en los juegos competitivos, dificultando su detección.</p>
+
+        <p>Por último, la proliferación de <strong>dispositivos IoT y periféricos inteligentes</strong> (mandos, cascos VR, sensores de movimiento) plantea riesgos de acceso no autorizado a través de vulnerabilidades en su firmware o en las conexiones Bluetooth/Wi-Fi.</p>
+
+        <h3>Buenas prácticas para desarrolladores</h3>
+        <p>Los desarrolladores de videojuegos tienen la responsabilidad de implementar medidas de ciberseguridad desde las primeras fases de diseño. Algunas recomendaciones clave incluyen:</p>
+
+        <ul>
+            <li><strong>Cifrado de datos:</strong> Asegurar que toda la información sensible (como contraseñas, tokens y datos de pago) esté cifrada usando estándares actuales como AES-256 y TLS 1.3.</li>
+            <li><strong>Protección del código fuente:</strong> Evitar incluir datos sensibles o claves API en el cliente del juego. Usar técnicas como la ofuscación de código y asegurar la lógica crítica en el servidor.</li>
+            <li><strong>Autenticación segura:</strong> Implementar autenticación multifactor (MFA) para cuentas de usuarios y personal de desarrollo. Evitar contraseñas débiles y almacenar hashes seguros con algoritmos como bcrypt o Argon2.</li>
+            <li><strong>Gestión de sesiones:</strong> Usar tokens con expiración y validación adecuada para evitar ataques de secuestro de sesión (session hijacking).</li>
+            <li><strong>Pruebas de seguridad:</strong> Realizar pruebas de penetración (pentesting), análisis estático de código y simulaciones de ataques para descubrir vulnerabilidades antes del lanzamiento.</li>
+            <li><strong>Actualizaciones regulares:</strong> Planificar parches de seguridad y actualizaciones frecuentes, especialmente para juegos con conexión online continua.</li>
+            <li><strong>Protección contra trampas:</strong> Implementar anti-cheat robustos que analicen comportamiento sospechoso del cliente, detecten modificaciones de memoria o DLLs no autorizadas.</li>
+        </ul>
+        <p>Con el crecimiento del juego en la nube y la integración de tecnologías como la inteligencia artificial y la realidad aumentada, surgen nuevas amenazas como la manipulación de datos en tiempo real, explotación de vulnerabilidades en plataformas de streaming y ataques a dispositivos IoT utilizados en experiencias inmersivas.</p>
+
+        <h3>Buenas prácticas para los usuarios</h3>
+        <p>La seguridad en los videojuegos también depende de los hábitos de los jugadores. Adoptar buenas prácticas puede prevenir robos de cuentas, estafas y pérdida de información personal o financiera. Algunas recomendaciones clave son:</p>
+
+        <ul>
+            <li><strong>Usar contraseñas seguras y únicas:</strong> No reutilices contraseñas entre diferentes plataformas. Utiliza combinaciones largas con letras, números y símbolos.</li>
+            <li><strong>Activar la autenticación en dos pasos (2FA):</strong> Muchos servicios como Steam, Epic Games, PlayStation o Xbox ofrecen 2FA. Actívala para mayor protección.</li>
+            <li><strong>Evitar enlaces sospechosos:</strong> No hagas clic en enlaces enviados por desconocidos en chats o correos. Muchos ataques de phishing imitan páginas legítimas.</li>
+            <li><strong>No compartir tus datos:</strong> Nunca compartas tu cuenta, código de verificación, ni información personal con nadie, ni siquiera si parece personal del soporte técnico.</li>
+            <li><strong>Jugar solo en plataformas oficiales:</strong> Evita juegos pirata, cracks o mods de fuentes no confiables. Pueden contener malware.</li>
+            <li><strong>Actualizar el software y los dispositivos:</strong> Mantén actualizado el sistema operativo, los juegos y el antivirus para cerrar posibles vulnerabilidades.</li>
+            <li><strong>Configurar bien la privacidad:</strong> Revisa los ajustes de privacidad en tus perfiles para limitar lo que otros pueden ver o contactar.</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2025 Safe Play</p>
+    </footer>
+</body>
+</html>
